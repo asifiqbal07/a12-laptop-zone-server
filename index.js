@@ -20,6 +20,8 @@ const client = new MongoClient(uri, { useNewUrlParser: true, useUnifiedTopology:
 async function run() {
     try {
         const laptopCollection = client.db('laptopZone').collection('laptops');
+        const bookingsCollection = client.db('laptopZone').collection('bookings');
+        const usersCollection = client.db('laptopZone').collection('users');
 
         app.get('/laptops', async (req, res) => {
             const query = {};
@@ -34,20 +36,31 @@ async function run() {
             res.send({ brand });
         });
 
-        // app.get('/laptops/:category/:id', async (req, res) => {
-        //     const category = req.params.category;
-        //     const id = req.params.id;
-        //     console.log(id);
-        //     const query = { category, id}
-        //     const brand = await laptopCollection.findOne(query);
-        //     res.send({ brand });
-        // });
-
         app.get('/laptops/hp/:id', async (req, res) => {
             const id = req.params.id;
             const query = { _id: ObjectId(id) }
             const hp = await laptopCollection.findOne(query);
             res.send({ hp });
+        });
+
+        app.get('/bookings', async (req, res) => {
+            const email = req.query.email;
+            const query = { email: email };
+            const bookings = await bookingsCollection.find(query).toArray();
+            res.send(bookings);
+        });
+
+        app.post('/bookings', async (req, res) => {
+            const booking = req.body;
+            const result = await bookingsCollection.insertOne(booking);
+            res.send(result);
+        });
+
+        app.post('/users', async (req, res) => {
+            const user = req.body;
+            console.log(user);
+            const result = await usersCollection.insertOne(user);
+            res.send(result);
         });
 
 
