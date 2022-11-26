@@ -1,0 +1,80 @@
+[
+    {
+        "id": "01",
+        "seller_name": "Sakib Khan",
+        "brand": "HP",
+        "title": "HP 15s-du3811TU Core i3 11th Gen 15.6in FHD Laptop",
+        "location": "Mirpur Dhaka",
+        "resale_price": 40000,
+        "original_price": 60000,
+        "years_of_use": "1.5yr",
+        "image_url": "https://i.ibb.co/55g1ZLS/hp1.jpg",
+        "details": "Processor: Intel Core i3-1125G4 (8M Cache, 2.00 GHz up to 3.70 GHz), RAM: 8GB DDR4 2666 MHz, Storage: 1TB HDD, Display: 15.6in FHD (1920 x 1080), Features: Full-size, natural silver keyboard with numeric keypad.",
+        "posted": "2022-10-25"
+    },
+    {
+        "id": "01",
+        "seller_name": "Salman Khan",
+        "brand": "HP",
+        "title": "HP Pavilion 15-eh1890AU Ryzen 5 5500U 15.6in FHD Laptop",
+        "location": "Mirpur Dhaka",
+        "resale_price": 55000,
+        "original_price": 78000,
+        "years_of_use": "1.1yr",
+        "image_url": "https://i.ibb.co/FsyDGpt/hp2.jpg",
+        "details": "Processor: AMD Ryzen 5 5500U (up to 4.0 GHz, 8 MB L3, 6 cores, 12 threads), RAM: 8GB DDR4 3200MHz RAM, SSD: 512 GB PCIe NVMe M.2 SSD, Operating system: Windows 11 Home.",
+        "posted": "2022-10-20"
+    },
+    {
+        "id": "02",
+        "seller_name": "Ammir Khan",
+        "brand": "Dell",
+        "title": "Dell Latitude 14 3420 Core i5 11th Gen 14in FHD Laptop",
+        "location": "Satkhira, Khulna",
+        "resale_price": 60000,
+        "original_price": 85500,
+        "years_of_use": "1.8yr",
+        "image_url": "https://i.ibb.co/SRF5wys/dell1.jpg",
+        "details": "Processor: Intel Core i5-1135G7 (8MB Cache, 2.40 GHz up to 4.20 GHz), RAM: 8GB 3200MHz DDR4, Storage: 512GB SSD, Display: 14in FHD (1920 x 1080), Features: microSD-card slot, Type-C port.",
+        "posted": "2022-11-12"
+    },
+    {
+        "id": "02",
+        "seller_name": "Ifran Khan",
+        "brand": "Dell",
+        "title": "Dell XPS 13 9310 Core i5 11th Gen 512GB SSD 13.4in Full HD Laptop",
+        "location": "Satkhira, Khulna",
+        "resale_price": 120000,
+        "original_price": 168000,
+        "years_of_use": "1yr",
+        "image_url": "https://i.ibb.co/cT2pWxQ/dell2.jpg",
+        "details": "Processor: Intel Core i5-1155G7 (8M Cache, 2.50 GHz up to 4.50 GHz), RAM: 8GB LPDDR4x , Storage: 512GB NVMe SSD, Display: 13.4in FHD+ (1920 x 1200), Features: 2x 2.5W stereo, Backlit Keyboard, Type-C.",
+        "posted": "2022-11-21"
+    },
+    {
+        "id": "03",
+        "seller_name": "Saif Ali Khan",
+        "brand": "Lenovo",
+        "title": "Lenovo IdeaPad 3 Ryzen 5 5500U 14in FHD Laptop with Windows 11",
+        "location": "Shitakundo, Chittagong",
+        "resale_price": 50000,
+        "original_price": 70000,
+        "years_of_use": "1yr",
+        "image_url": "https://i.ibb.co/rd6k74P/l1.jpg",
+        "details": "Processor: AMD Ryzen 5 5500U (8M Cache, 2.1GHz up to 4.0GHz, 6 cores), RAM: 8GB 3200MHZ RAM ( 2 x 4GB ), SSD: 512GB NVMe PCIe, Display: 14in FHD (1920x1080) IPS.",
+        "posted": "2022-11-12"
+    },
+    {
+        "id": "03",
+        "seller_name": "Jahid Khan",
+        "brand": "Lenovo",
+        "title": "Lenovo IdeaPad Flex 5 AMD Ryzen 5 5500U 14in FHD Touch Laptop",
+        "location": "Shitakundo, Chittagong",
+        "resale_price": 6000,
+        "original_price": 84000,
+        "years_of_use": "1.4yr",
+        "image_url": "https://i.ibb.co/xCkm3px/l2.jpg.jpg",
+        "details": "Processor: AMD Ryzen 5 5500U (8M Cache, 2.1GHz up to 4.0GHz, 6 cores), RAM: 8GB 3200MHZ , Storage: 512GB SSD, Display: 14in FHD (1920x1080) Touch, Features: 10 Point Multi-Touch, High Definition (HD) Audio.",
+        "posted": "2022-11-21"
+    }
+]
