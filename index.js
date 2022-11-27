@@ -56,7 +56,6 @@ async function run() {
 
         app.get("/laptops/:id", async (req, res) => {
             const id = req.params.id;
-            console.log(id);
             const filterProducts = await productCollection.find({ id: id }).toArray();
             res.send(filterProducts);
           });
@@ -111,7 +110,21 @@ async function run() {
             const query = { email }
             const user = await usersCollection.findOne(query);
             res.send({ isAdmin: user?.role === 'admin' });
-        })
+        });
+
+        app.get('/users/buyer/:email', async (req, res) => {
+            const email = req.params.email;
+            const query = { email }
+            const user = await usersCollection.findOne(query);
+            res.send({ isBuyer: user?.role === 'buyer' });
+        });
+
+        app.get('/users/seller/:email', async (req, res) => {
+            const email = req.params.email;
+            const query = { email }
+            const user = await usersCollection.findOne(query);
+            res.send({ isSeller: user?.role === 'seller' });
+        });
 
         app.post('/users', async (req, res) => {
             const user = req.body;
