@@ -48,26 +48,11 @@ async function run() {
             res.send(laptops);
         });
 
-        // app.get('/laptops/:id', async (req, res) => {
-        //     const id = req.params.id;
-        //     const query = { _id: ObjectId(id) }
-        //     const result = await laptopCollection.findOne(query);
-        //     res.send({ result });
-        // });
-
         app.get('/products', async (req, res) => {
             const query = {};
             const laptops = await productCollection.find(query).toArray();
             res.send(laptops);
         });
-
-        // app.get('/products/:id', async (req, res) => {
-        //     const id = req.params.id;
-        //     const query = { _id: ObjectId(id) }
-        //     const result = await productCollection?.filter(
-        //         (c)=> c.id=== query);
-        //     res.send({ result });
-        // });
 
         app.get("/laptops/:id", async (req, res) => {
             const id = req.params.id;
@@ -75,6 +60,15 @@ async function run() {
             const filterProducts = await productCollection.find({ id: id }).toArray();
             res.send(filterProducts);
           });
+          
+        // app.get("/laptops/:category", async (req, res) => {
+        //     const category = req.params.category;
+        //     console.log(category);
+        //     const filterProducts = await productCollection.find({ category: category }).toArray();
+        //     res.send(filterProducts);
+        //   });
+
+
 
         app.get('/bookings', verifyJWT, async (req, res) => {
             const email = req.query.email;
@@ -125,11 +119,12 @@ async function run() {
             res.send(result);
         });
 
-        app.post('/laptops', async (req, res) => {
-            const user = req.body;
-            const result = await productCollection.insertOne(user);
+        app.post("/products",async(req,res)=>{
+            const products = req.body;
+            const result = await productCollection.insertOne(products);
             res.send(result);
-        });
+      
+          });
 
         app.put('/users/admin/:id', verifyJWT, async (req, res) => {
             const decodedEmail = req.decoded.email;

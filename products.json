@@ -2,7 +2,7 @@
     {
         "id": "01",
         "seller_name": "Sakib Khan",
-        "brand": "HP",
+        "category": "HP",
         "title": "HP 15s-du3811TU Core i3 11th Gen 15.6in FHD Laptop",
         "location": "Mirpur Dhaka",
         "resale_price": 40000,
@@ -15,7 +15,7 @@
     {
         "id": "01",
         "seller_name": "Salman Khan",
-        "brand": "HP",
+        "category": "HP",
         "title": "HP Pavilion 15-eh1890AU Ryzen 5 5500U 15.6in FHD Laptop",
         "location": "Mirpur Dhaka",
         "resale_price": 55000,
@@ -28,7 +28,7 @@
     {
         "id": "02",
         "seller_name": "Ammir Khan",
-        "brand": "Dell",
+        "category": "DELL",
         "title": "Dell Latitude 14 3420 Core i5 11th Gen 14in FHD Laptop",
         "location": "Satkhira, Khulna",
         "resale_price": 60000,
@@ -41,7 +41,7 @@
     {
         "id": "02",
         "seller_name": "Ifran Khan",
-        "brand": "Dell",
+        "category": "DELL",
         "title": "Dell XPS 13 9310 Core i5 11th Gen 512GB SSD 13.4in Full HD Laptop",
         "location": "Satkhira, Khulna",
         "resale_price": 120000,
@@ -54,7 +54,7 @@
     {
         "id": "03",
         "seller_name": "Saif Ali Khan",
-        "brand": "Lenovo",
+        "category": "Lenovo",
         "title": "Lenovo IdeaPad 3 Ryzen 5 5500U 14in FHD Laptop with Windows 11",
         "location": "Shitakundo, Chittagong",
         "resale_price": 50000,
@@ -67,7 +67,7 @@
     {
         "id": "03",
         "seller_name": "Jahid Khan",
-        "brand": "Lenovo",
+        "category": "Lenovo",
         "title": "Lenovo IdeaPad Flex 5 AMD Ryzen 5 5500U 14in FHD Touch Laptop",
         "location": "Shitakundo, Chittagong",
         "resale_price": 6000,
